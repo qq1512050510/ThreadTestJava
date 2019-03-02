@@ -1,0 +1,54 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.ibm</groupId>
+	<artifactId>test</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>test Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<servlet-version>3.1.0</servlet-version>
+		<jsp-version>2.3.1</jsp-version>
+		<jstl-version>1.2</jstl-version>
+		<spring.version>4.0.2.RELEASE</spring.version>
+		<mybatis.version>3.2.6</mybatis.version>
+		<mybatis-spring>1.2.2</mybatis-spring>
+		<mybatis>3.2.6</mybatis>
+		<c3p0-version>0.9.1.2</c3p0-version>
+		<c3p0-mchange>0.9.5-pre8</c3p0-mchange>
+		<c3p0-mchange-commons>0.2.12</c3p0-mchange-commons>
+		<mysql-connection>5.1.30</mysql-connection>
+
+		<!-- log4j日志文件管理包版本 -->
+		<slf4j.version>1.7.7</slf4j.version>
+		<log4j.version>1.2.17</log4j.version>
+	</properties>
+	<dependencies>
+		<!-- JSP/Servlet/Jstl 的jar包 -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${servlet-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>javax.servlet.jsp-api</artifactId>
+			<version>${jsp-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>${jstl-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>test</finalName>
+	</build>
+</project>
