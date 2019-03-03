@@ -9,6 +9,7 @@ public class ThreadTest implements Runnable{
 	public static void main(String[]args)
 	{
 		Thread test = new Thread(new ThreadTest());
+		System.out.println(test.getPriority());
 		test.start();
 	}
 
